@@ -12,6 +12,7 @@ namespace EstructuraDeDatos
 {
     public partial class Cola : Form
     {
+        // comentario nuevo
         Queue<ColaInfraccion> nuevaCola = new Queue<ColaInfraccion>();
         DateTime fecha;
         ColaInfraccion nuevaInfracccion;
