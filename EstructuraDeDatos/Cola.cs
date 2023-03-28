@@ -12,9 +12,12 @@ namespace EstructuraDeDatos
 {
     public partial class Cola : Form
     {
-        // comentario nuevo
+        // se crea una lista de Cola, esta instancia tiene el nombre de listaCola
         Queue<ColaInfraccion> listaCola = new Queue<ColaInfraccion>();
+        
         DateTime fecha;
+
+        //creamos una instancia de la clase ColaInfraccion, llamada nuevaInfraccion 
         ColaInfraccion nuevaInfracccion;
 
         public Cola()
@@ -22,6 +25,8 @@ namespace EstructuraDeDatos
             InitializeComponent();
         }
 
+
+        //Este es el handle del evento Click para agregar la informacion, falta terminar
         private void bt_Registrar_Click(object sender, EventArgs e)
         {
             nuevaInfracccion = new ColaInfraccion();
@@ -40,6 +45,8 @@ namespace EstructuraDeDatos
             dataGridView1.DataSource = listaCola.ToArray();
         }
 
+        /*Este es el handle del evento Click del boton  Calculara, para que nos imprima 
+         la cantidad de registros de la listaCola*/
         private void bt_Calcular_Click(object sender, EventArgs e)
         {
             if (listaCola.Count == 0)
@@ -53,6 +60,10 @@ namespace EstructuraDeDatos
                 tb_Registros.Text = listaCola.Count.ToString();
             }
         }
+
+
+        /*Este es el handle del evento Click del boton borrar, nos imprime el nombre 
+         y el numero de identificacion si estas dispuesta a borrar al registro*/
 
         private void bt_Borrar_Click(object sender, EventArgs e)
         {

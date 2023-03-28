@@ -29,12 +29,17 @@ namespace EstructuraDeDatos
 {
     public partial class Pila : Form
     {
+        //Se crea una lista d tipo pila de la clase cliente. 
         Stack<PilaClientes> Clientes = new Stack<PilaClientes>();
+
+        //Se crea una instancia 
         PilaClientes nuevoCliente;
         public Pila()
         {
             InitializeComponent();
         }
+
+
         DateTime soloFecha;
         private void button1_Click(object sender, EventArgs e)
         {
