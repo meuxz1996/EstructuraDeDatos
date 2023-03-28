@@ -13,7 +13,7 @@ namespace EstructuraDeDatos
     public partial class Cola : Form
     {
         // comentario nuevo
-        Queue<ColaInfraccion> nuevaCola = new Queue<ColaInfraccion>();
+        Queue<ColaInfraccion> listaCola = new Queue<ColaInfraccion>();
         DateTime fecha;
         ColaInfraccion nuevaInfracccion;
 
@@ -35,14 +35,14 @@ namespace EstructuraDeDatos
             nuevaInfracccion.Dias = Convert.ToInt32(tb_Dias.Text);
             nuevaInfracccion.Calcular_Comparendo();
 
-            nuevaCola.Enqueue(nuevaInfracccion);
+            listaCola.Enqueue(nuevaInfracccion);
 
-            dataGridView1.DataSource = nuevaCola.ToArray();
+            dataGridView1.DataSource = listaCola.ToArray();
         }
 
         private void bt_Calcular_Click(object sender, EventArgs e)
         {
-            if (nuevaCola.Count == 0)
+            if (listaCola.Count == 0)
             {
 
                 MessageBox.Show("Por el momento no se ha ingresado registros");
@@ -50,13 +50,13 @@ namespace EstructuraDeDatos
             }
             else
             {
-                tb_Registros.Text = nuevaCola.Count.ToString();
+                tb_Registros.Text = listaCola.Count.ToString();
             }
         }
 
         private void bt_Borrar_Click(object sender, EventArgs e)
         {
-            if (nuevaCola.Count.Equals(0))
+            if (listaCola.Count.Equals(0))
             {
                 MessageBox.Show("No se encuentra elementos");
             }
@@ -65,7 +65,7 @@ namespace EstructuraDeDatos
                 //si la pila esta llena se crea un nuevo objeto de la clase pilaCDT
                 ColaInfraccion usar = new ColaInfraccion();
                 //con el metodo peek pasamoa al objeto el ultimo objeto que se introjo en la pila 
-                usar = nuevaCola.Peek();
+                usar = listaCola.Peek();
                 //creamos un string format para crear  la cadena para el message box
                 string usar2 = string.Format($"Desea borrar este cliente: {usar.Nombre}"
                     + $"Numero de identificacion: {usar.Identificacion}");
@@ -73,9 +73,9 @@ namespace EstructuraDeDatos
                 DialogResult valorar = MessageBox.Show(usar2, "borrar", MessageBoxButtons.YesNo);
                 if (valorar == DialogResult.Yes)
                 {
-                    nuevaCola.Dequeue();
+                    listaCola.Dequeue();
 
-                    dataGridView1.DataSource = nuevaCola.ToArray();
+                    dataGridView1.DataSource = listaCola.ToArray();
                 }
                 //nuevaCliente2 = pilaCdts.Pop();
 
