@@ -59,6 +59,7 @@
     <Compile Include="Lista.Designer.cs">
       <DependentUpon>Lista.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListaEstudiante.cs" />
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
