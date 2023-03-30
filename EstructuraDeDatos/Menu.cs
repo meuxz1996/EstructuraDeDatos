@@ -31,7 +31,8 @@ namespace EstructuraDeDatos
 
         private void bt_Lista_Click(object sender, EventArgs e)
         {
-
+            Lista nuevaLista = new Lista();
+            nuevaLista.Show();
         }
     }
 }
