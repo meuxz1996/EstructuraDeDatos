@@ -58,6 +58,7 @@
             this.tb_Id.Name = "tb_Id";
             this.tb_Id.Size = new System.Drawing.Size(100, 20);
             this.tb_Id.TabIndex = 2;
+            this.tb_Id.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Numeros_KeyPress);
             // 
             // Buscar
             // 

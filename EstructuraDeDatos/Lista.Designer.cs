@@ -156,6 +156,7 @@
             this.tb_Identificacion.Name = "tb_Identificacion";
             this.tb_Identificacion.Size = new System.Drawing.Size(121, 20);
             this.tb_Identificacion.TabIndex = 8;
+            this.tb_Identificacion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Numeros_KeyPress);
             // 
             // dtp_Fecha
             // 
@@ -234,6 +235,7 @@
             this.tb_Nombre.Name = "tb_Nombre";
             this.tb_Nombre.Size = new System.Drawing.Size(121, 20);
             this.tb_Nombre.TabIndex = 17;
+            this.tb_Nombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Letras_KeyPress);
             // 
             // label6
             // 

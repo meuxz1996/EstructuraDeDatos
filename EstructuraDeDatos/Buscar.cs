@@ -32,5 +32,13 @@ namespace EstructuraDeDatos
         {
 
         }
+        private void Numeros_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 33 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Error ingreso una letra");
+                e.Handled = true;
+            }
+        }
     }
 }
