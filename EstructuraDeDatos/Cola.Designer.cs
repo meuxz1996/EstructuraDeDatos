@@ -119,6 +119,7 @@
             this.tb_Identificacion.Name = "tb_Identificacion";
             this.tb_Identificacion.Size = new System.Drawing.Size(100, 20);
             this.tb_Identificacion.TabIndex = 8;
+            this.tb_Identificacion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Numeros_KeyPress);
             // 
             // tb_Nombre
             // 
@@ -126,6 +127,7 @@
             this.tb_Nombre.Name = "tb_Nombre";
             this.tb_Nombre.Size = new System.Drawing.Size(100, 20);
             this.tb_Nombre.TabIndex = 9;
+            this.tb_Nombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Letras_KeyPress);
             // 
             // tb_Direccion
             // 
@@ -147,6 +149,7 @@
             this.tb_Dias.Name = "tb_Dias";
             this.tb_Dias.Size = new System.Drawing.Size(100, 20);
             this.tb_Dias.TabIndex = 12;
+            this.tb_Dias.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Numeros_KeyPress);
             // 
             // dtp_Fecha
             // 

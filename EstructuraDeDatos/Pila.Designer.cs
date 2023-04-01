@@ -108,6 +108,7 @@
             this.tx_Id.Name = "tx_Id";
             this.tx_Id.Size = new System.Drawing.Size(121, 20);
             this.tx_Id.TabIndex = 6;
+            this.tx_Id.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Numeros_KeyPress);
             // 
             // tx_Nombre
             // 
@@ -115,6 +116,7 @@
             this.tx_Nombre.Name = "tx_Nombre";
             this.tx_Nombre.Size = new System.Drawing.Size(121, 20);
             this.tx_Nombre.TabIndex = 7;
+            this.tx_Nombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Letras_KeyPress);
             // 
             // cb_Estrato
             // 
@@ -211,7 +213,7 @@
             this.bt_Borrar.UseVisualStyleBackColor = true;
             this.bt_Borrar.Click += new System.EventHandler(this.bt_Borrar_Click);
             // 
-            // Form1
+            // Pila
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -233,7 +235,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "Pila";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

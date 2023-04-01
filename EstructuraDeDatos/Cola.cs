@@ -92,5 +92,22 @@ namespace EstructuraDeDatos
 
             }
         }
+        private void Numeros_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 33 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Error ingreso una letra");
+                e.Handled = true;
+            }
+        }
+        private void Letras_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 33 && e.KeyChar <= 64) || (e.KeyChar >= 91 && e.KeyChar <= 96) || (e.KeyChar >= 123 && e.KeyChar <= 255))
+            {
+                MessageBox.Show("Error ingreso un valor numérico");
+                e.Handled = true;
+
+            }
+        }
     }
 }

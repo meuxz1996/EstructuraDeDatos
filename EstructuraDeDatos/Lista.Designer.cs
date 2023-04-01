@@ -226,6 +226,7 @@
             this.bt_Borrar.TabIndex = 15;
             this.bt_Borrar.Text = "Borrrar";
             this.bt_Borrar.UseVisualStyleBackColor = true;
+            this.bt_Borrar.Click += new System.EventHandler(this.bt_Borrar_Click);
             // 
             // tb_Nombre
             // 
