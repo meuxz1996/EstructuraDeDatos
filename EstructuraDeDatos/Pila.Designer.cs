@@ -177,8 +177,8 @@
             this.cb_Megas.Items.AddRange(new object[] {
             "5 megas",
             "10 megas",
-            "15 megas",
-            "20 megas"});
+            "20 megas",
+            "50 megas"});
             this.cb_Megas.Location = new System.Drawing.Point(385, 23);
             this.cb_Megas.Name = "cb_Megas";
             this.cb_Megas.Size = new System.Drawing.Size(121, 21);

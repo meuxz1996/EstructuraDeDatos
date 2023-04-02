@@ -37,12 +37,12 @@ Rural) del cliente,*/
                     temp2 = 40000;
                     Pago = temp2 - (temp2 * temp);
                 }
-                else if (Megas.Equals("15 megas"))
+                else if (Megas.Equals("20 megas"))
                 {
                     temp2 = 55000;
                     Pago = temp2 - (temp2 * temp);
                 }
-                else if (Megas.Equals("20 megas"))
+                else if (Megas.Equals("50 megas"))
                 {
                     temp2 = 70000;
                     Pago = temp2 - (temp2 * temp);
@@ -60,12 +60,12 @@ Rural) del cliente,*/
                     temp2 = 30000;
                     Pago = temp2 - (temp2 * temp);
                 }
-                else if (Megas.Equals("15 megas"))
+                else if (Megas.Equals("20 megas"))
                 {
                     temp2 = 45000;
                     Pago = temp2 - (temp2 * temp);
                 }
-                else if (Megas.Equals("20 megas"))
+                else if (Megas.Equals("50 megas"))
                 {
                     temp2 = 60000;
                     Pago = temp2 - (temp2 * temp);

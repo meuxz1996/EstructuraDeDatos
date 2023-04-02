@@ -34,7 +34,7 @@ namespace EstructuraDeDatos
             nuevoEstudiante.Numero_Documento = tb_Identificacion.Text;
             nuevoEstudiante.Nombre = tb_Nombre.Text;
             nuevoEstudiante.Estrato = cb_Estrato.Text;
-            nuevoEstudiante.Grado = cb_Grado.Text;
+            nuevoEstudiante.Grado = Convert.ToInt32(cb_Grado.Text);
             fecha = dtp_Fecha.Value;
             nuevoEstudiante.Fecha_Nacimiento = fecha.ToString("dd/MMM/yyyy");
             if(rb_Si.Checked == true)
@@ -102,7 +102,7 @@ namespace EstructuraDeDatos
                         cb_Identificacion.Text = nuevo.Tipo_Documento;
                         tb_Nombre.Text = nuevo.Nombre;
                         cb_Estrato.Text = nuevo.Estrato;
-                        cb_Grado.Text = nuevo.Grado;
+                        cb_Grado.Text = nuevo.Grado.ToString();
                         bt_Borrar.Enabled = true;
 
                     }
